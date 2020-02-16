@@ -74,7 +74,7 @@ The purpose of doing is to see how labels could influence the result. As we know
 And the second method of labeling is just an extreme experiment, that i want to create a method of labeling that has the exact same number of samples for each class. After i plotted the price map based on equally area label, it turns out that it wasn’t a good way of labeling. 
 Staring here, only equally spaced labeling method was applied to do the classification. Six models were applied:
 
-   	* 1. Gradient Boosting Classifier: 46.1%
+* 1. Gradient Boosting Classifier: 46.1%
    	* 2. Random Forest Classifier:     43.8%
    	* 3. Neural Network:               43.2%
    	* 4. Decision Tree Classifier:     38.3%
