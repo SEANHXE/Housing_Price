@@ -7,14 +7,14 @@ Kun He, Chiehen Hung, Ben Liu, Guojun Xiong, Tianxiao Zhang, Xiaohan Zhang
 
 .
 ├── notebooks
-│	├──Anomaly_detection_KC.ipynb
-│     	├──Anomaly_detection_Beijing.ipynb
-│	├──Classification_KC.ipynb
-│	├──Classification_Beijing.ipynb
-│	├──Cluster.ipynb
-│	├──Housing_predic-Beijing.ipynb
-│	└──Housing_Predict-KC.ipynb
-└── data
+	├──Anomaly_detection_KC.ipynb
+     	├──Anomaly_detection_Beijing.ipynb
+	├──Classification_KC.ipynb
+	├──Classification_Beijing.ipynb
+	├──Cluster.ipynb
+	├──Housing_predic-Beijing.ipynb
+	└──Housing_Predict-KC.ipynb
+└──   data
 	├──Beijing_housing_price.csv
 	└──KC_housing_price.csv
 └── README.md
@@ -90,15 +90,14 @@ Consider that the dataset is time related. As we known from time series, timing 
    * 5. KNN:                          74.3%
    * 6. SVM:                          68.2%
 
-### King County(KC) Housing Price Classfication:
+## King County(KC) Housing Price Classfication:
 
 * Step1: Feature Engineering
 	
 	1)
         square = sqft_living + sqft_lot + sqft_above + sqft_basement
         which means we plus all the square categories to get the total square of the house
-
-        2)
+	2)
         UnitPricee = price/square
         To generate a common feature for house price
 
@@ -111,20 +110,18 @@ Consider that the dataset is time related. As we known from time series, timing 
 
 * Step3: Classification
         Here I use 6 six different classifiers to make classification. These are the classifiers and the result:
-
-        1.Random Forest:         54.5%
+        
+	1.Random Forest:         54.5%
         2.Gradient Boosting      52.7%
         3.Decision Tree          46.0%
         4.KNN                    28.0%
         5.SVM                    20.7%
         6.Neural Network         42.5%
 
-        And I choose RF, GB, NN for the final choice.
-
-        Consider that sometime the different between exact unit price and predict unit price actually is small, but it will be at different label, such as 19.9 and 20.1
+	And I choose RF, GB, NN for the final choice.
+	Consider that sometime the different between exact unit price and predict unit price actually is small, but it will be at different label, such as 19.9 and 20.1
         So I give it a tolerance with 1 possible class shift, which means class 1/2/3 = class 2.
-
-        With this operation, the result is improved:
+	 With this operation, the result is improved:
         1.RF                    90.3%
         2.GB                    88.9%
         3.NN                    81.7%
