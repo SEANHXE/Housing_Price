@@ -113,8 +113,8 @@ Consider that the dataset is time related. As we known from time series, timing 
         Here I use 6 six different classifiers to make classification. These are the classifiers and the result:
         
 	
-	* 1.Random Forest:         54.5%
-        * 2.Gradient Boosting      52.7%
+	*1.Random Forest:         54.5%
+        *2.Gradient Boosting      52.7%
         * 3.Decision Tree          46.0%
         * 4.KNN                    28.0%
         * 5.SVM                    20.7%
