@@ -1,8 +1,8 @@
 # Housing Price
-# team member:
+# Team Member:
 Kun He, Chiehen Hung, Ben Liu, Guojun Xiong, Tianxiao Zhang, Xiaohan Zhang
 
-# structure
+# Structure
 
 ```bash
 
