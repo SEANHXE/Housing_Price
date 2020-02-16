@@ -75,21 +75,21 @@ And the second method of labeling is just an extreme experiment, that i want to 
 Staring here, only equally spaced labeling method was applied to do the classification. Six models were applied:
 
 * 1. Gradient Boosting Classifier: 46.1%
-   	* 2. Random Forest Classifier:     43.8%
-   	* 3. Neural Network:               43.2%
-   	* 4. Decision Tree Classifier:     38.3%
-   	* 5. KNN:                   	   36.6%
-   	* 6. SVM:                          29.2%
+* 2. Random Forest Classifier:     43.8%
+* 3. Neural Network:               43.2%
+* 4. Decision Tree Classifier:     38.3%
+* 5. KNN:                   	   36.6%
+* 6. SVM:                          29.2%
    
 #### Result with 1 class tolerance
 Consider that the dataset is time related. As we known from time series, timing has a huge influence in unit price as well. Base on this, think of some close edge situations, we give it a 1 class tolerance and would like to see how that works. Here goes the result:
 
-  	* 1. Neural Network:                87.3%
-   	* 2. Gradient Boosting Classifier:  87.0%
-   	* 3. Random Forest Classifier:      84.8%
-   	* 4. Decision Tree Classifier:      80.0%
-   	* 5. KNN:                           74.3%
-   	* 6. SVM:                           68.2%
+* 1. Neural Network:                87.3%
+* 2. Gradient Boosting Classifier:  87.0%
+* 3. Random Forest Classifier:      84.8%
+* 4. Decision Tree Classifier:      80.0%
+* 5. KNN:                           74.3%
+* 6. SVM:                           68.2%
 
 ## King County(KC) Housing Price Classfication:
 
@@ -113,17 +113,17 @@ Consider that the dataset is time related. As we known from time series, timing 
         Here I use 6 six different classifiers to make classification. These are the classifiers and the result:
         
 	
-	*1.Random Forest:         54.5%
-        *2.Gradient Boosting      52.7%
-        * 3.Decision Tree          46.0%
-        * 4.KNN                    28.0%
-        * 5.SVM                    20.7%
-        * 6.Neural Network         42.5%
+* 1.Random Forest:         54.5%
+* 2.Gradient Boosting      52.7%
+* 3.Decision Tree          46.0%
+* 4.KNN                    28.0%
+* 5.SVM                    20.7%
+* 6.Neural Network         42.5%
 
 	And I choose RF, GB, NN for the final choice.
 	Consider that sometime the different between exact unit price and predict unit price actually is small, but it will be at different label, such as 19.9 and 20.1
 	So I give it a tolerance with 1 possible class shift, which means class 1/2/3 = class 2. With this operation, the result is improved:
 	
-         * 1.RF                    90.3%
-         * 2.GB                    88.9%
-         * 3.NN                    81.7%
+* 1.RF                    90.3%
+* 2.GB                    88.9%
+* 3.NN                    81.7%
