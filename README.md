@@ -7,16 +7,16 @@ Kun He, Chiehen Hung, Ben Liu, Guojun Xiong, Tianxiao Zhang, Xiaohan Zhang
 
 .
 ├── notebooks
-│			├──Anomaly_detection_KC.ipynb
-│     ├──Anomaly_detection_Beijing.ipynb
-│			├──Classification_KC.ipynb
-│			├──Classification_Beijing.ipynb
-│			├──Cluster.ipynb
-│			├──Housing_predic-Beijing.ipynb
-│			└──Housing_Predict-KC.ipynb
+│	├──Anomaly_detection_KC.ipynb
+│     	├──Anomaly_detection_Beijing.ipynb
+│	├──Classification_KC.ipynb
+│	├──Classification_Beijing.ipynb
+│	├──Cluster.ipynb
+│	├──Housing_predic-Beijing.ipynb
+│	└──Housing_Predict-KC.ipynb
 └── data
-			├──Beijing_housing_price.csv
-		  └──KC_housing_price.csv
+	├──Beijing_housing_price.csv
+	└──KC_housing_price.csv
 └── README.md
 ```
 
@@ -87,13 +87,14 @@ Consider that the dataset is time related. As we known from time series, timing 
    * 2. Gradient Boosting Classifier: 87.0%
    * 3. Random Forest Classifier:     84.8%
    * 4. Decision Tree Classifier:     80.0%
-   * 5. KNN:                   74.3%
+   * 5. KNN:                          74.3%
    * 6. SVM:                          68.2%
 
 ### King County(KC) Housing Price Classfication:
 
 * Step1: Feature Engineering
-        1)
+	
+	1)
         square = sqft_living + sqft_lot + sqft_above + sqft_basement
         which means we plus all the square categories to get the total square of the house
 
